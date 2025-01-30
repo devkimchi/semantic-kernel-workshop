@@ -20,7 +20,7 @@ var kernel = Kernel.CreateBuilder()
                         apiKey: config["Google:Gemini:ApiKey"]!,
                         serviceId: "google")
                    .AddOpenAIChatCompletion(
-                        modelId: config["GitHub:Models:ModelIds:0"]!,
+                        modelId: config["GitHub:Models:ModelId"]!,
                         openAIClient: client,
                         serviceId: "github")
                    .Build();
