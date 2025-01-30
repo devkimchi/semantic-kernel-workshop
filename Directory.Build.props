@@ -1,0 +1,14 @@
+<Project>
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <AspireVersion>9.0.0</AspireVersion>
+    <EntityFrameworkCoreVersion>9.*</EntityFrameworkCoreVersion>
+    <MicrosoftAspNetCoreVersion>9.*</MicrosoftAspNetCoreVersion>
+    <MicrosoftExtensionsVersion>9.*</MicrosoftExtensionsVersion>
+    <OpenTelemetryVersion>1.*</OpenTelemetryVersion>
+  </PropertyGroup>
+</Project>
