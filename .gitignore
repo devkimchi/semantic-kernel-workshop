@@ -401,4 +401,5 @@ FodyWeavers.xsd
 .DS_Store
 workshop/
 workshop*/
+!workshop.*/
 Database.*
