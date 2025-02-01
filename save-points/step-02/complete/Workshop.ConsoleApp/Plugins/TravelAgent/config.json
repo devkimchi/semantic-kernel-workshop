@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "type": "completion",
+  "description": "Recommend various food and outdoor activities in the given city",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 1000,
+      "temperature": 0
+    }
+  },
+  "input_variables": [
+    {
+      "name": "city",
+      "description": "Name of the city provided by the user",
+      "required": true
+    },
+    {
+      "name": "background",
+      "description": "The user's background",
+      "required": true
+    }
+  ]
+}

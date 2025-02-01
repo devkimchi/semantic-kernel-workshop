@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "TrainName": "KTX",
+    "Destination": "Seoul",
+    "DepartureDate": "2025-02-20",
+    "Price": 60000,
+    "IsBooked": true
+  },
+  {
+    "Id": 2,
+    "TrainName": "SRT",
+    "Destination": "Suseo",
+    "DepartureDate": "2025-02-23",
+    "Price": 55000,
+    "IsBooked": false
+  },
+  {
+    "Id": 3,
+    "TrainName": "ITX",
+    "Destination": "Seoul",
+    "DepartureDate": "2025-02-25",
+    "Price": 45000,
+    "IsBooked": false
+  }
+]
