@@ -560,25 +560,25 @@ Workshop
 
 1. `Workshop.ConsoleApp/Program.cs` 파일을 열고 `// Uncomment each line to run a plugin` 라인을 찾아 아래와 같이 주석을 제거합니다.
 
-```csharp
-// Uncomment each line to run a plugin
-
-// 👇👇👇 인라인 프롬프트 실행하고 싶으면 주석 제거
-// await PluginAction.InvokeInlinePromptAsync(kernel);
-// 👆👆👆 인라인 프롬프트 실행하고 싶으면 주석 제거
-
-// 👇👇👇 외부 프롬프트 실행하고 싶으면 주석 제거
-// await PluginAction.InvokeImportedPromptAsync(kernel);
-// 👆👆👆 외부 프롬프트 실행하고 싶으면 주석 제거
-
-// 👇👇👇 기차 예약 에이전트 실행하고 싶으면 주석 제거
-// await PluginAction.InvokeTrainBookingPluginAsync(kernel);
-// 👆👆👆 기차 예약 에이전트 실행하고 싶으면 주석 제거
-
-// 👇👇👇 날씨 봇 실행하고 싶으면 주석 제거
-// await PluginAction.InvokeWeatherPluginAsync(kernel);
-// 👆👆👆 날씨 봇 실행하고 싶으면 주석 제거
-```
+    ```csharp
+    // Uncomment each line to run a plugin
+    
+    // 👇👇👇 인라인 프롬프트 실행하고 싶으면 주석 제거
+    // await PluginAction.InvokeInlinePromptAsync(kernel);
+    // 👆👆👆 인라인 프롬프트 실행하고 싶으면 주석 제거
+    
+    // 👇👇👇 외부 프롬프트 실행하고 싶으면 주석 제거
+    // await PluginAction.InvokeImportedPromptAsync(kernel);
+    // 👆👆👆 외부 프롬프트 실행하고 싶으면 주석 제거
+    
+    // 👇👇👇 기차 예약 에이전트 실행하고 싶으면 주석 제거
+    // await PluginAction.InvokeTrainBookingPluginAsync(kernel);
+    // 👆👆👆 기차 예약 에이전트 실행하고 싶으면 주석 제거
+    
+    // 👇👇👇 날씨 봇 실행하고 싶으면 주석 제거
+    // await PluginAction.InvokeWeatherPluginAsync(kernel);
+    // 👆👆👆 날씨 봇 실행하고 싶으면 주석 제거
+    ```
 
 1. 콘솔 앱을 실행시킵니다.
 
