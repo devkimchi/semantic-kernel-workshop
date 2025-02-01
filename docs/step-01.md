@@ -310,7 +310,7 @@ Workshop
 
 ## 👉👉 도전 과제 👈👈
 
-- 이번 실습에서는 [GitHub Models Marketplace](https://github.com/marketplace?type=models)에서 제공하는 [`gpt-4o`](https://github.com/marketplace/models/azure-openai/gpt-4o) 모델을 사용했습니다. 이번에는 DeepSeek의 R1 모델을 추가해서 다른 답변과 비교해 보세요.
+- 이번 실습에서는 [GitHub Models Marketplace](https://github.com/marketplace?type=models)에서 제공하는 [`gpt-4o`](https://github.com/marketplace/models/azure-openai/gpt-4o) 모델을 사용했습니다. 이번에는 [DeepSeek의 R1](https://github.com/marketplace/models/azureml-deepseek/DeepSeek-R1) 모델을 추가해서 다른 답변과 비교해 보세요.
 
 ---
 
