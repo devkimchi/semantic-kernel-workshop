@@ -277,7 +277,7 @@ Workshop
 1. `Assistant: ` 프롬프트에 응답이 표시되는 것을 확인합니다.
 1. 다시 `User: ` 프롬프트가 보이면 다른 도시 이름을 입력하거나 아무것도 입력하지 않고 엔터키를 눌러 콘솔 앱을 종료합니다.
 
-## 도전 과제 #1
+## 👉👉 도전 과제 #1 👈👈
 
 - 앞서 작성한 `TravelAgent` 플러그인은 현재 영어로 답변을 합니다. 이 플러그인의 답변을 모두 한국어로 바꿔서 출력할 수 있도록 프롬프트를 조정해 보세요.
 
@@ -523,7 +523,7 @@ Workshop
 1. `Assistant: ` 프롬프트에 응답이 표시되는 것을 확인합니다.
 1. 다시 `User: ` 프롬프트가 보이면 다른 예약을 해 보거나 아무것도 입력하지 않고 엔터키를 눌러 콘솔 앱을 종료합니다.
 
-## 도전 과제 #2
+## 👉👉 도전 과제 #2 👈👈
 
 - `Workshop.ConsoleApp/Plugins/WeatherBot` 디렉토리에 있는 `WeatherPlugin.cs` 파일을 사용해서 특정 도시 &ndash; London, New York, Tokyo, Seoul, Paris, Sydney &dash; 의 날씨를 확인해 봅니다.
 

@@ -308,7 +308,7 @@ Workshop
 1. `Assistant: ` 프롬프트에 Google Gemini와 GitHub Models의 응답이 표시되는 것을 확인합니다.
 1. 다시 `User: ` 프롬프트가 보이면 아무것도 입력하지 않고 엔터키를 눌러 콘솔 앱을 종료합니다.
 
-## 도전 과제
+## 👉👉 도전 과제 👈👈
 
 - 이번 실습에서는 [GitHub Models Marketplace](https://github.com/marketplace?type=models)에서 제공하는 [`gpt-4o`](https://github.com/marketplace/models/azure-openai/gpt-4o) 모델을 사용했습니다. 이번에는 DeepSeek의 R1 모델을 추가해서 다른 답변과 비교해 보세요.
 
