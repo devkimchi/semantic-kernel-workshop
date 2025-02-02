@@ -95,7 +95,7 @@ Workshop
 1. 콘솔 앱 프로젝트에 에이전트용 패키지 라이브러리를 추가합니다.
 
     ```bash
-    dotnet add ./Workshop.ConsoleApp package Microsoft.SemanticKernel.Agents.Core --preview
+    dotnet add ./Workshop.ConsoleApp package Microsoft.SemanticKernel.Agents.Core --prerelease
     dotnet add ./Workshop.ConsoleApp package Microsoft.SemanticKernel.Yaml
     ```
 
@@ -275,7 +275,7 @@ Workshop
 1. 콘솔 앱 프로젝트에 에이전트용 패키지 라이브러리를 추가합니다.
 
     ```bash
-    dotnet add ./Workshop.ConsoleApp package Microsoft.SemanticKernel.Agents.Core --preview
+    dotnet add ./Workshop.ConsoleApp package Microsoft.SemanticKernel.Agents.Core --prerelease
     dotnet add ./Workshop.ConsoleApp package Microsoft.SemanticKernel.Yaml
     ```
 
@@ -483,7 +483,7 @@ Workshop
 1. 콘솔 앱 프로젝트에 에이전트용 패키지 라이브러리를 추가합니다.
 
     ```bash
-    dotnet add ./Workshop.ConsoleApp package Microsoft.SemanticKernel.Agents.Core --preview
+    dotnet add ./Workshop.ConsoleApp package Microsoft.SemanticKernel.Agents.Core --prerelease
     ```
 
 1. `Workshop.ConsoleApp/Program.cs` 파일을 열고 `using Microsoft.SemanticKernel;` 라인을 찾아 아래 코드를 입력합니다.
