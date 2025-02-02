@@ -12,15 +12,28 @@ var config = new ConfigurationBuilder()
                  .AddUserSecrets<Program>()
                  .Build();
 
-var client = new OpenAIClient(
-    credential: new ApiKeyCredential(config["GitHub:Models:AccessToken"]!),
-    options: new OpenAIClientOptions { Endpoint = new Uri(config["GitHub:Models:Endpoint"]!) });
+var builder = Kernel.CreateBuilder();
+if (string.IsNullOrWhiteSpace(config["Azure:OpenAI:Endpoint"]!) == false)
+{
+    var client = new AzureOpenAIClient(
+        new Uri(config["Azure:OpenAI:Endpoint"]!),
+        new AzureKeyCredential(config["Azure:OpenAI:ApiKey"]!));
 
-var kernel = Kernel.CreateBuilder()
-                   .AddOpenAIChatCompletion(
-                        modelId: config["GitHub:Models:ModelId"]!,
-                        openAIClient: client)
-                   .Build();
+    builder.AddAzureOpenAIChatCompletion(
+                deploymentName: config["Azure:OpenAI:DeploymentName"]!,
+                azureOpenAIClient: client);
+}
+else
+{
+    var client = new OpenAIClient(
+        credential: new ApiKeyCredential(config["GitHub:Models:AccessToken"]!),
+        options: new OpenAIClientOptions { Endpoint = new Uri(config["GitHub:Models:Endpoint"]!) });
+
+    builder.AddOpenAIChatCompletion(
+                modelId: config["GitHub:Models:ModelId"]!,
+                openAIClient: client);
+}
+var kernel = builder.Build();
 
 // Uncomment each line to run a plugin
 await PluginActions.InvokeInlinePromptAsync(kernel);
