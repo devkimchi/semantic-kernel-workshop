@@ -488,7 +488,7 @@ Semantic Kernel에 In-Memory 벡터 데이터베이스에 저장되어 있는 �
 
 ## 채팅 결과를 모니터링하기
 
-Semantic Kernel을 활용한 챗봇 호출 결과를 .NET Aspire 대시보드를 이용해 모니터링합니다.
+Semantic Kernel을 활용한 챗봇 호출 결과를 [.NET Aspire 대시보드](https://learn.microsoft.com/dotnet/aspire/fundamentals/dashboard/standalone)를 이용해 모니터링합니다.
 
 1. Docker Desktop 애플리케이션이 돌고 있는지 다시 한 번 확인합니다. 아래 명령어를 실행시켰을 때 커넥션 에러가 생긴다면 Docker Desktop을 실행시켜 주세요.
 
@@ -619,9 +619,9 @@ Semantic Kernel을 활용한 챗봇 호출 결과를 .NET Aspire 대시보드를
 1. 다시 `User: ` 프롬프트가 보이면 아무것도 입력하지 않고 엔터키를 눌러 콘솔 앱을 종료합니다.
 1. .NET Aspire 대시보드에서 데이터 트레이싱 결과를 확인합니다.
 
-![.NET Aspire 대시보드 - 데이터 트레이싱 결과 #1](./images/image-03.png)
+   ![.NET Aspire 대시보드 - 데이터 트레이싱 결과 #1](./images/image-03.png)
 
-![.NET Aspire 대시보드 - 데이터 트레이싱 결과 #4](./images/image-04.png)
+   ![.NET Aspire 대시보드 - 데이터 트레이싱 결과 #4](./images/image-04.png)
 
 ## 완성본 결과 확인
 
