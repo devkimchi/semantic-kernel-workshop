@@ -32,7 +32,7 @@ Semantic Kernel을 이용해서 지능형 애플리케이션을 개발해 보는
   | [STEP 01](./docs/step-01.md) | Semantic Kernel 기본 작동법     |
   | [STEP 02](./docs/step-02.md) | Semantic Kernel 플러그인 만들기 |
   | [STEP 03](./docs/step-03.md) | Semantic Kernel 에이전트 만들기 |
-  | [STEP 04](./docs/step-04.md) | Semantic Kernel 모니터링 및 RAG |
+  | [STEP 04](./docs/step-04.md) | Semantic Kernel RAG 및 모니터링 |
 
 - 각 단계별 중간 결과물은 [세이브 포인트](./save-points)에서 확인할 수 있습니다.
 

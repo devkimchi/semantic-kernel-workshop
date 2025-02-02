@@ -6,7 +6,7 @@ using Workshop.ConsoleApp.Plugins.WeatherBot;
 
 namespace Workshop.ConsoleApp;
 
-public static class PluginAction
+public static class PluginActions
 {
     public static async Task InvokeInlinePromptAsync(Kernel kernel)
     {

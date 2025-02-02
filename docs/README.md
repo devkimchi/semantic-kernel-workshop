@@ -12,4 +12,4 @@
 | [STEP 01](./step-01.md) | Semantic Kernel 기본 작동법     |
 | [STEP 02](./step-02.md) | Semantic Kernel 플러그인 만들기 |
 | [STEP 03](./step-03.md) | Semantic Kernel 에이전트 만들기 |
-| [STEP 04](./step-04.md) | Semantic Kernel 모니터링 및 RAG |
+| [STEP 04](./step-04.md) | Semantic Kernel RAG 및 모니터링 |

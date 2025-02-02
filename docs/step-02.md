@@ -79,7 +79,7 @@ Workshop
     ```
 
 1. `User:` 라는 프롬프트가 보이면 아무 문장이나 입력합니다. 예) `Who are you?` 또는 `하늘은 왜 파랄까?`
-1. `Assistant: ` 프롬프트에 GitHub Models의 응답이 표시되는 것을 확인합니다.
+1. `Assistant: ` 프롬프트에 응답이 표시되는 것을 확인합니다.
 1. 다시 `User: ` 프롬프트가 보이면 아무것도 입력하지 않고 엔터키를 눌러 콘솔 앱을 종료합니다.
 
 ## 인라인 프롬프트 플러그인 추가하기
@@ -494,16 +494,33 @@ Workshop
 
     // 👇👇👇 아래 코드를 입력하세요
     history.AddUserMessage(input);
-    var response = service.GetStreamingChatMessageContentsAsync(history, settings, kernel);
     // 👆👆👆 위 코드를 입력하세요
+    ```
 
+   그리고 아래와 같이 코드를 수정합니다.
+
+    ```csharp
+    // 👇👇👇 아래 코드를 삭제하세요
+    var response = kernel.InvokePromptStreamingAsync(input);
+    // 👆👆👆 위 코드를 삭제하세요
+    
+    // 👇👇👇 아래 코드를 추가하세요
+    var response = service.GetStreamingChatMessageContentsAsync(history, settings, kernel);
+    // 👆👆👆 위 코드를 추가하세요
+
+    await foreach (var content in response)
+    ```
+
+    그리고 아래 코드를 추가하세요.
+
+    ```csharp
     await foreach (var content in response)
     {
         await Task.Delay(20);
         message += content;
         Console.Write(content);
     }
-
+    
     // 👇👇👇 아래 코드를 입력하세요
     history.AddAssistantMessage(message!);
     // 👆👆👆 위 코드를 입력하세요

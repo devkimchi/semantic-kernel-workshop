@@ -5,8 +5,6 @@ using Microsoft.SemanticKernel;
 
 using OpenAI;
 
-using Workshop.ConsoleApp;
-
 var config = new ConfigurationBuilder()
                  .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                  .AddUserSecrets<Program>()
@@ -22,8 +20,28 @@ var kernel = Kernel.CreateBuilder()
                         openAIClient: client)
                    .Build();
 
-// Uncomment each line to run a plugin
-await PluginActions.InvokeInlinePromptAsync(kernel);
-// await PluginActions.InvokeImportedPromptAsync(kernel);
-// await PluginActions.InvokeTrainBookingPluginAsync(kernel);
-// await PluginActions.InvokeWeatherPluginAsync(kernel);
+var input = default(string);
+var message = default(string);
+while (true)
+{
+    Console.Write("User: ");
+    input = Console.ReadLine();
+
+    if (string.IsNullOrWhiteSpace(input))
+    {
+        break;
+    }
+
+    Console.Write("Assistant: ");
+
+    var response = kernel.InvokePromptStreamingAsync(input);
+    await foreach (var content in response)
+    {
+        await Task.Delay(20);
+        message += content;
+        Console.Write(content);
+    }
+    Console.WriteLine();
+
+    Console.WriteLine();
+}
