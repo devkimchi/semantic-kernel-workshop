@@ -211,7 +211,7 @@ Workshop
                             serviceId: "google")
                        // 👇👇👇 아래 코드를 입력하세요
                        .AddOpenAIChatCompletion(
-                            modelId: config["GitHub:Models:ModelIds:0"]!,
+                            modelId: config["GitHub:Models:ModelId"]!,
                             openAIClient: client,
                             serviceId: "github")
                        // 👆👆👆 위 코드를 입력하세요
