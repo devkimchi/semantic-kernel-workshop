@@ -175,7 +175,7 @@ Workshop
         touch $REPOSITORY_ROOT/workshop/Workshop.ConsoleApp/Plugins/TravelAgent/config.json && \
         touch $REPOSITORY_ROOT/workshop/Workshop.ConsoleApp/Plugins/TravelAgent/skprompt.txt
     ```
-    
+
     ```powershell
     # PowerShell
     New-Item -Type Directory -Path $REPOSITORY_ROOT/workshop/Workshop.ConsoleApp/Plugins/TravelAgent && `
@@ -301,7 +301,7 @@ Workshop
         touch $REPOSITORY_ROOT/workshop/Workshop.ConsoleApp/Plugins/BookingAgent/trains.json && \
         touch $REPOSITORY_ROOT/workshop/Workshop.ConsoleApp/Plugins/BookingAgent/TrainBookingPlugin.cs
     ```
-    
+
     ```powershell
     # PowerShell
     New-Item -Type Directory -Path $REPOSITORY_ROOT/workshop/Workshop.ConsoleApp/Plugins/BookingAgent && `
@@ -425,7 +425,23 @@ Workshop
     }
     ```
 
-1. `Workshop.ConsoleApp/Program.cs` 파일을 열고 `var input = default(string);` 라인을 찾아 아래 코드를 입력합니다.
+1. `Workshop.ConsoleApp/Program.cs` 파일을 열고 `using Microsoft.SemanticKernel;` 라인을 찾아 아래 코드를 입력합니다.
+
+    ```csharp
+    using System.ClientModel;
+    
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.SemanticKernel;
+    
+    // 👇👇👇 아래 코드를 입력하세요
+    using Microsoft.SemanticKernel.ChatCompletion;
+    using Workshop.ConsoleApp.Plugins.BookingAgent;
+    // 👆👆👆 위 코드를 입력하세요
+    
+    using OpenAI;
+    ```
+
+1. `Workshop.ConsoleApp/Program.cs` 파일에서 `var input = default(string);` 라인을 찾아 아래 코드를 입력합니다.
 
     ```csharp
     // 👇👇👇 아래 코드를 입력하세요

@@ -106,7 +106,7 @@ Workshop
     mkdir -p $REPOSITORY_ROOT/workshop/Workshop.ConsoleApp/Plugins/StoryTellerAgent && \
         touch $REPOSITORY_ROOT/workshop/Workshop.ConsoleApp/Plugins/StoryTellerAgent/StoryTeller.yaml
     ```
-    
+
     ```powershell
     # PowerShell
     New-Item -Type Directory -Path $REPOSITORY_ROOT/workshop/Workshop.ConsoleApp/Plugins/StoryTellerAgent && `
@@ -286,7 +286,7 @@ Workshop
     mkdir -p $REPOSITORY_ROOT/workshop/Workshop.ConsoleApp/Plugins/RestaurantAgent && \
         touch $REPOSITORY_ROOT/workshop/Workshop.ConsoleApp/Plugins/RestaurantAgent/MenuPlugin.cs
     ```
-    
+
     ```powershell
     # PowerShell
     New-Item -Type Directory -Path $REPOSITORY_ROOT/workshop/Workshop.ConsoleApp/Plugins/RestaurantAgent && `
