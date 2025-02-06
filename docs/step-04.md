@@ -105,7 +105,7 @@ Semantic Kernel에 In-Memory 벡터 데이터베이스를 연결합니다.
         touch $REPOSITORY_ROOT/workshop/Workshop.ConsoleApp/Models/DataModel.cs && \
         touch $REPOSITORY_ROOT/workshop/Workshop.ConsoleApp/Services/TextSearchService.cs
     ```
-    
+
     ```powershell
     # PowerShell
     New-Item -Type Directory -Path $REPOSITORY_ROOT/workshop/Workshop.ConsoleApp/Models/ && `
@@ -250,30 +250,24 @@ Semantic Kernel에 In-Memory 벡터 데이터베이스에 저장되어 있는 �
     cd $REPOSITORY_ROOT/workshop
     ```
 
-1. `Workshop.ConsoleApp/Program.cs` 파일을 열고 `using System.ClientModel;` 라인을 찾아 아래 코드를 입력합니다.
+1. `Workshop.ConsoleApp/Program.cs` 파일을 열고 `using Microsoft.SemanticKernel;` 라인을 찾아 아래 코드를 입력합니다.
 
     ```csharp
     using System.ClientModel;
 
-    // 👇👇👇 아래 코드를 삭제하세요
-    using Microsoft.Extensions.Configuration;
-    using Microsoft.SemanticKernel;
-    
-    using OpenAI;
-    // 👆👆👆 위 코드를 삭제하세요
-    
-    // 👇👇👇 아래 코드를 추가하세요
     using Azure;
     using Azure.AI.OpenAI;
-    
+
     using Microsoft.Extensions.Configuration;
     using Microsoft.SemanticKernel;
+
+    // 👇👇👇 아래 코드를 입력하세요
     using Microsoft.SemanticKernel.Data;
     
-    using OpenAI;
-    
     using Workshop.ConsoleApp.Services;
-    // 👆👆👆 위 코드를 추가하세요
+    // 👆👆👆 위 코드를 입력하세요
+    
+    using OpenAI;
     ```
 
 1. `Workshop.ConsoleApp/Program.cs` 파일에서 `var input = default(string);` 라인을 찾아 아래 코드를 입력합니다.
@@ -444,7 +438,10 @@ Semantic Kernel에 In-Memory 벡터 데이터베이스에 저장되어 있는 �
 
     ```csharp
     // 👇👇👇 아래 코드를 입력하세요
-    var settings = new PromptExecutionSettings() { FunctionChoiceBehavior = FunctionChoiceBehavior.Auto() };
+    var settings = new PromptExecutionSettings()
+    {
+        FunctionChoiceBehavior = FunctionChoiceBehavior.Auto()
+    };
     // 👆👆👆 위 코드를 입력하세요
 
     var input = default(string);
