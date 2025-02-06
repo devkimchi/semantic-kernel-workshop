@@ -521,6 +521,8 @@ Semantic Kernel을 활용한 챗봇 호출 결과를 [.NET Aspire 대시보드](
     using Microsoft.SemanticKernel.PromptTemplates.Handlebars;
     
     using OpenAI;
+
+    using Workshop.ConsoleApp.Services;
     // 👆👆👆 위 코드를 삭제하세요
     
     // 👇👇👇 아래 코드를 추가하세요
@@ -538,9 +540,9 @@ Semantic Kernel을 활용한 챗봇 호출 결과를 [.NET Aspire 대시보드](
     using OpenTelemetry.Metrics;
     using OpenTelemetry.Resources;
     using OpenTelemetry.Trace;
-    // 👆👆👆 위 코드를 추가하세요
-    
+
     using Workshop.ConsoleApp.Services;
+    // 👆👆👆 위 코드를 추가하세요
     ```
 
 1. `Workshop.ConsoleApp/Program.cs` 파일에서서 `var builder = Kernel.CreateBuilder();` 라인을 찾아 아래 코드를 입력합니다.
