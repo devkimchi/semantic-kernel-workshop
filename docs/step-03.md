@@ -804,4 +804,4 @@ Workshop
 
 ---
 
-축하합니다! **Semantic Kernel 에이전트 만들기** 실습이 끝났습니다. 이제 [STEP 04: Semantic Kernel RAG 및 모니터링](./step-03.md) 단계로 넘어가세요.
+축하합니다! **Semantic Kernel 에이전트 만들기** 실습이 끝났습니다. 이제 [STEP 04: Semantic Kernel RAG 및 모니터링](./step-04.md) 단계로 넘어가세요.
