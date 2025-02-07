@@ -681,23 +681,17 @@ Workshop
     ```csharp
     // 👇👇👇 아래 코드를 삭제하세요
     Console.Write("Assistant: ");
+
+    var response = kernel.InvokePromptStreamingAsync(input);
     // 👆👆👆 위 코드를 삭제하세요
     
     // 👇👇👇 아래 코드를 추가하세요
     chat.AddChatMessage(new ChatMessageContent(AuthorRole.User, input));
-    // 👆👆👆 위 코드를 추가하세요
 
-    await foreach (var content in response)
-    ```
-
-    그리고 아래 코드를 추가하세요.
-
-    ```csharp
-    // 👇👇👇 아래 코드를 입력하세요
     var agentName = default(string);
     var isAgentChanged = false;
     var response = chat.InvokeStreamingAsync();
-    // 👆👆👆 위 코드를 입력하세요
+    // 👆👆👆 위 코드를 추가하세요
 
     await foreach (var content in response)
     ```
@@ -741,7 +735,6 @@ Workshop
 1. `User:` 라는 프롬프트가 보이면 광고를 위한 제품, 상품 등을 입력합니다.
 1. `ProjectManager: `, `Copywriter: ` 프롬프트가 서로 대화를 하면서 결과를 도출해 내는 것을 확인합니다.
 1. 다시 `User: ` 프롬프트가 보이면 아무것도 입력하지 않고 엔터키를 눌러 콘솔 앱을 종료합니다.
-
 
 ## 완성본 결과 확인
 
