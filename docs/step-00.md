@@ -71,7 +71,7 @@
     pwsh --version
     ```
 
-   워크샵 문서 작성 시점 기준 가장 최신 버전은 `7.5.0`입니다. 만약 버전이 낮다면 [PowerShell 설치 페이지](https://learn.microsoft.com/powershell/scripting/install/installing-powershell)에서 최신 버전을 다운로드 받아 설치합니다.
+   `7.4.0` 이상의 버전이 있어야 합니다. 만약 이보다 버전이 낮다면 [PowerShell 설치 페이지](https://learn.microsoft.com/powershell/scripting/install/installing-powershell)에서 최신 버전을 다운로드 받아 설치합니다.
 
 ## git CLI 설치 확인
 
@@ -95,7 +95,7 @@
     git --version
     ```
 
-   워크샵 문서 작성 시점 기준 가장 최신 버전은 `2.47.1`입니다. 만약 버전이 낮다면 [git CLI 설치 페이지](https://git-scm.com/downloads)에서 최신 버전을 다운로드 받아 설치합니다.
+   `2.39.0` 이상의 버전이 있어야 합니다. 만약 이보다 버전이 낮다면 [git CLI 설치 페이지](https://git-scm.com/downloads)에서 최신 버전을 다운로드 받아 설치합니다.
 
 ## GitHub CLI 설치 확인
 
@@ -119,7 +119,7 @@
     gh --version
     ```
 
-   워크샵 문서 작성 시점 기준 가장 최신 버전은 `2.65.0`입니다. 만약 버전이 낮다면 [GitHub CLI 설치 페이지](https://cli.github.com/)에서 최신 버전을 다운로드 받아 설치합니다.
+   `2.65.0` 이상의 버전이 있어야 합니다. 만약 이보다 버전이 낮다면 [GitHub CLI 설치 페이지](https://cli.github.com/)에서 최신 버전을 다운로드 받아 설치합니다.
 
 1. GitHub에 로그인 했는지 확인합니다.
 
@@ -151,7 +151,7 @@
     docker --version
     ```
 
-   워크샵 문서 작성 시점 기준 가장 최신 버전은 `27.4.0`입니다. 만약 버전이 낮다면 [Docker Desktop 설치 페이지](https://docs.docker.com/get-started/introduction/get-docker-desktop/)에서 최신 버전을 다운로드 받아 설치합니다.
+   `27.4.0` 이상의 버전이 있어야 합니다. 만약 이보다 버전이 낮다면 [Docker Desktop 설치 페이지](https://docs.docker.com/get-started/introduction/get-docker-desktop/)에서 최신 버전을 다운로드 받아 설치합니다.
 
 ## Visual Studio Code 설치 확인
 
@@ -175,7 +175,7 @@
     code --version
     ```
 
-   워크샵 문서 작성 시점 기준 가장 최신 버전은 `1.96.4`입니다. 만약 버전이 낮다면 [Visual Studio Code 설치 페이지](https://code.visualstudio.com/)에서 최신 버전을 다운로드 받아 설치합니다.
+   `1.96.0` 이상의 버전이 있어야 합니다. 만약 이보다 버전이 낮다면 [Visual Studio Code 설치 페이지](https://code.visualstudio.com/)에서 최신 버전을 다운로드 받아 설치합니다.
 
    > 만약 터미널에서 `code` 명령어를 실행시킬 수 없다면, [이 문서](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)를 참고하여 설정합니다.
 
