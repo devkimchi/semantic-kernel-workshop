@@ -297,7 +297,6 @@ Semantic Kernel에 In-Memory 벡터 데이터베이스에 저장되어 있는 �
     ```csharp
     Console.Write("Assistant: ");
 
-    ```csharp
     // 👇👇👇 아래 코드를 삭제하세요
     var response = kernel.InvokePromptStreamingAsync(input);
     await foreach (var content in response)
