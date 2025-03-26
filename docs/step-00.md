@@ -13,6 +13,14 @@
 - [Google Gemini API Key](https://ai.google.dev/gemini-api/docs/api-key) 생성
 - [GitHub Personal Access Token](https://github.com/settings/tokens) 생성
 
+## GitHub Codespaces로 시작하기
+
+![GitHub Codespaces 시작하기](./images/image-00.png)
+
+위 이미지를 따라 차례로 `[<> Code]` 👉 `[Codespaces]` 👉 `[Create codespace on main]`를 클릭해서 GitHub Codespaces 인스턴스를 생성합니다. 네트워크 사정에 따라 대략 5분-10분 정도 걸립니다.
+
+GitHub Codespaces 인스턴스가 만들어지면 [Google Gemini API Key 생성](#google-gemini-api-key-생성) 섹션으로 이동합니다.
+
 ## .NET SDK 설치 확인
 
 1. 터미널에서 아래 명령어를 실행시켜 현재 .NET SDK를 설치했는지 확인합니다.
